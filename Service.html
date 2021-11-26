@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            width: 100%;
+            line-height: 1.3;
+            background-color: #fdfdfd;
+        }
+
+        .container {
+            overflow: hidden;
+            width: 98%;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #0a1e50;
+            padding: 12px;
+        }
+
+        .container .brand {
+            font-size: 40px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .container .brand em {
+            font-size: 35px;
+            font-weight: 200;
+            color: rgb(255, 255, 255);
+            font-family: cursive;
+        }
+
+        .container li {
+            float: left;
+            margin: 0 14px;
+        }
+
+        .container a,
+        .container .logo {
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+        }
+
+
+        section .container h1 {
+            font-size: 32px;
+            color: #072a4b;
+            margin-top: 100px;
+        }
+
+        section .container {
+            text-align: center;
+            background-image: url(bon.jpg);
+            min-height: 350px;
+            width: 100%;
+            border-bottom: 10px solid #041a2e;
+            border-top: 10px solid #041a2e;
+        }
+
+        .container p {
+            font-size: 18px;
+        }
+
+        .container h3 {
+            color: #072a4b;
+        }
+
+        .container button {
+            padding: 10px;
+            background-color: #072a4b;
+            border: none;
+            transition: ease-in-out 200ms;
+        }
+
+        .container button:hover {
+            background-color: #041a2e;
+            box-shadow: 0 0 20px #4e6ebe;
+            transform: scale(1.2);
+            color: white;
+        }
+
+        .out h1 {
+            text-align: center;
+            font-size: 35px;
+            color: #041a2e;
+        }
+
+        #main .flex {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .flex .first {
+            background-color: #041a2e;
+            height: 200px;
+            width: 250px;
+            gap: 10px;
+            text-align: center;
+            color: white;
+            transition: ease-in 0.6s;
+        }
+
+        .flex .first:hover {
+            background-color: #072a4b;
+            transform: scale(1.1);
+        }
+
+        .first .kk {
+            margin-top: 7px;
+            font-size: 15px;
+        }
+
+        footer {
+            background-color: #041a2e;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media(min-width:400px) {
+            #main .flex {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                row-gap: 10px;
+            }
+        }
+
+        section .top h1 {
+            text-align: center;
+            background-color: #0a1e50;
+            padding: 5px;
+            margin-top: 10px;
+            color: white;
+        }
+
+        section {
+            width: 90%;
+            margin: auto;
+        }
+
+        section .mid .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #4e6ebe;
+        }
+
+        section .body {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        section .mid .logo em {
+            font-size: 24px;
+            color: #041a2e;
+        }
+
+        .bottom .form {
+            width: 25%;
+        }
+
+        .mid .top {
+            text-align: center;
+            background-color: #0a1e50;
+            padding: 6px;
+            margin-top: 15px;
+            color: white;
+        }
+
+        .mid .flex .side1 {
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            line-height: 3;
+            background-color: #0a1e50;
+            width: 17%;
+            margin-top: 7px;
+        }
+
+        .mid .side2 .box {
+            background-color: #0a1e50;
+            width: 150px;
+            height: 120px;
+            font-size: 10px;
+            text-align: center;
+            color: white;
+            margin: 5px;
+        }
+
+        .mid .side2 {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 60%;
+            background-color: gray;
+            margin-top: 7px;
+        }
+
+        .mid .side3 {
+            background-color: #0a1e50;
+            font-size: 22px;
+            font-weight: 700;
+            color: white;
+            width: 15%;
+            margin-top: 7px;
+        }
+
+        .mid {
+            width: 90%;
+            margin: auto;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="brand">Dev<em>Loan</em></div>
+            <nav>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="logo">
+                &#9776;
+            </div>
+        </div>
+    </header>
+    <div class="mid">
+        <div class="top">
+            <h1>OUR SERVICE</h1>
+        </div>
+        <div class="flex">
+            <div class="side1">
+                <ul>
+                    <li>Services</li>
+                    <li>Services</li>
+                    <li>Services</li>
+                    <li>Services</li>
+                    <li>Services</li>
+                    <li>Services</li>
+                    <li>Services</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="side2">
+                <div class="box">
+                    <h3>SERVICES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum id, tempore eaque nobis
+                        quisquam accusantium ab obcaecati, facilis dolorum ad quaerat alias fugit error voluptates neque
+                        nostrum sunt unde consequatur!</p>
+                </div>
+                <div class="box">
+                    <h3>SERVICES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum id, tempore eaque nobis
+                        quisquam accusantium ab obcaecati, facilis dolorum ad quaerat alias fugit error voluptates neque
+                        nostrum sunt unde consequatur!</p>
+                </div>
+                <div class="box">
+                    <h3>SERVICES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum id, tempore eaque nobis
+                        quisquam accusantium ab obcaecati, facilis dolorum ad quaerat alias fugit error voluptates neque
+                        nostrum sunt unde consequatur!</p>
+                </div>
+                <div class="box">
+                    <h3>SERVICES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum id, tempore eaque nobis
+                        quisquam accusantium ab obcaecati, facilis dolorum ad quaerat alias fugit error voluptates neque
+                        nostrum sunt unde consequatur!</p>
+                </div>
+                <div class="box">
+                    <h3>SERVICES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum id, tempore eaque nobis
+                        quisquam accusantium ab obcaecati, facilis dolorum ad quaerat alias fugit error voluptates neque
+                        nostrum sunt unde consequatur!</p>
+                </div>
+                <div class="box">
+                    <h3>SERVICES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum id, tempore eaque nobis
+                        quisquam accusantium ab obcaecati, facilis dolorum ad quaerat alias fugit error voluptates neque
+                        nostrum sunt unde consequatur!</p>
+                </div>
+                <div class="box">
+                    <h3>SERVICES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum id, tempore eaque nobis
+                        quisquam accusantium ab obcaecati, facilis dolorum ad quaerat alias fugit error voluptates neque
+                        nostrum sunt unde consequatur!</p>
+                </div>
+                <div class="box">
+                    <h3>SERVICES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum id, tempore eaque nobis
+                        quisquam accusantium ab obcaecati, facilis dolorum ad quaerat alias fugit error voluptates neque
+                        nostrum sunt unde consequatur!</p>
+                </div>
+                <div class="box">
+                    <h3>SERVICES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum id, tempore eaque nobis
+                        quisquam accusantium ab obcaecati, facilis dolorum ad quaerat alias fugit error voluptates neque
+                        nostrum sunt unde consequatur!</p>
+                </div>
+                <div class="box">
+                    <h3>SERVICES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum id, tempore eaque nobis
+                        quisquam accusantium ab obcaecati, facilis dolorum ad quaerat alias fugit error voluptates neque
+                        nostrum sunt unde consequatur!</p>
+                </div>
+                <div class="box">
+                    <h3>SERVICES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum id, tempore eaque nobis
+                        quisquam accusantium ab obcaecati, facilis dolorum ad quaerat alias fugit error voluptates neque
+                        nostrum sunt unde consequatur!</p>
+                </div>
+                <div class="box">
+                    <h3>SERVICES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum id, tempore eaque nobis
+                        quisquam accusantium ab obcaecati, facilis dolorum ad quaerat alias fugit error voluptates neque
+                        nostrum sunt unde consequatur!</p>
+                </div>
+            </div>
+            <div class="side3">
+                <h1>EXCELLENT</h1>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>DeVbatch Loan Copyright &copy;,Jul 17 2021</p>
+    </footer>
+</body>
+
+</html>

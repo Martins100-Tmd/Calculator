@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            width: 100%;
+            line-height: 1.3;
+            background-color: #fdfdfd;
+        }
+
+        .container {
+            overflow: hidden;
+            width: 98%;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #0a1e50;
+            padding: 12px;
+        }
+
+        .container .brand {
+            font-size: 40px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .container .brand em {
+            font-size: 35px;
+            font-weight: 200;
+            color: rgb(255, 255, 255);
+            font-family: cursive;
+        }
+
+        .container li {
+            float: left;
+            margin: 0 14px;
+        }
+
+        .container a,
+        .container .logo {
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+        }
+
+        section .container h1 {
+            font-size: 32px;
+            color: #072a4b;
+            margin-top: 100px;
+        }
+
+        section .container {
+            text-align: center;
+            background-image: url(bon.jpg);
+            min-height: 350px;
+            width: 100%;
+            border-bottom: 10px solid #041a2e;
+            border-top: 10px solid #041a2e;
+        }
+
+        .container p {
+            font-size: 18px;
+        }
+
+        .container h3 {
+            color: #072a4b;
+        }
+
+        .container button {
+            padding: 10px;
+            background-color: #072a4b;
+            border: none;
+            transition: ease-in-out 200ms;
+            font-size: 14px;
+        }
+
+        .container button:hover {
+            background-color: #041a2e;
+            box-shadow: 0 0 20px #4e6ebe;
+            transform: scale(1.2);
+            color: white;
+        }
+
+        .out h1 {
+            text-align: center;
+            font-size: 35px;
+            color: #041a2e;
+        }
+
+        #main .flex {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .flex .first {
+            background-color: #041a2e;
+            height: 200px;
+            width: 250px;
+            gap: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .first .kk {
+            margin-top: 7px;
+            font-size: 15px;
+        }
+
+        footer {
+            background-color: #041a2e;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media(min-width:400px) {
+            #main .flex {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                row-gap: 10px;
+            }
+        }
+
+        .calc {
+            background-color: #0a1e50;
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .calc input {
+            width: 50%;
+            padding: 10px;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .calc label {
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .calc h1 {
+            font-size: 25px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="brand">Dev<em>Loan</em></div>
+            <nav>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="logo">
+                &#9776;
+            </div>
+        </div>
+    </header>
+    <section id="calc">
+        <div class="loan calc">
+            <h1>DeVbatch Loan Calculator</h1><br>
+
+
+            <label>Price:</label><br>
+            <input type="text" placeholder="$$$$" id="price-input"><br><br>
+            <label>Rate:</label><br>
+            <input type="text" placeholder="%%%" id="rate-input"><br><br>
+            <label>Time:</label><br>
+            <input type="text" placeholder="Yrs/mos" id="time-input"><br><br>
+            <input type="submit" value="Calculate" id="btn"><br><br>
+
+            <label>Interest:</label><br>
+            <input type="text" placeholder="%" id="interest-input"><br><br>
+            <label>Total-Amount:</label><br>
+            <input type="text" placeholder="$$$$" id="total-input"><br><br>
+
+        </div>
+    </section>
+    <section id="main">
+
+        <div class="ddd">
+            <div class="flex">
+                <div class="first">
+                    <div class="kk">&#4400;</div>
+                    <h2>Fast</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aspernatur perspiciatis,
+                        molestias, dolorum voluptatem asperiores commodi officiis nam ipsum, vero consequuntur. Unde.
+                    </p>
+
+                </div>
+                <div class="first">
+                    <div class="kk">&#4400;</div>
+                    <h2>Fast</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aspernatur perspiciatis,
+                        molestias, dolorum voluptatem asperiores commodi officiis nam ipsum, vero consequuntur. Unde.
+                    </p>
+
+                </div>
+                <div class="first">
+                    <div class="kk">&#4400;</div>
+                    <h2>Fast</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aspernatur perspiciatis,
+                        molestias, dolorum voluptatem asperiores commodi officiis nam ipsum, vero consequuntur. Unde.
+                    </p>
+
+                </div>
+                <div class="first">
+                    <div class="kk">&#4400;</div>
+                    <h2>Fast</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto aspernatur perspiciatis,
+                        molestias, dolorum voluptatem asperiores commodi officiis nam ipsum, vero consequuntur. Unde.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>DeVbatch Loan Copyright &copy;,Jul 17 2021</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
